@@ -1,7 +1,7 @@
-import React, {useEffect} from 'react';
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 import vocabsData from "./data/vocabs.json";
+import { Link } from "react-router-dom";
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
           </div>
         ))
       }
-      <button>퀴즈 풀기</button>
+      <Link to="/quiz">퀴즈 풀기</Link>
     </div>
   );
 }
